@@ -5,7 +5,7 @@ return array(
 	'ServerAddress'				=> '192.168.56.101:80',				// This value is the hostname:port under which Flux runs. (e.g., example.com or example.com:80)
 	'BaseURI'					=> 'fluxcp',						// The base URI is the base web root on which your application lies.
 	'InstallerPassword'			=> 'fluxcp',		// Installer/updater password.
-	'RequireOwnership'			=> true,					// Require the executing user to be owner of the FLUX_ROOT/data/ directory tree? (Better for security)
+	'RequireOwnership'			=> false,					// Require the executing user to be owner of the FLUX_ROOT/data/ directory tree? (Better for security)
 															// WARNING: This will be mostly IGNORED on non-POSIX-compliant OSes (e.g. Windows).
 	'DefaultLoginGroup'			=> null,
 	'DefaultCharMapServer'		=> null,
@@ -21,7 +21,7 @@ return array(
 	'DivinePrideIntegration'	=> true,					// Dowload monsters and items images from https://www.divine-pride.net if it's not exist.
 	'ForceEmptyEmblem'			=> false,					// Forcefully display empty guild emblems, helpful when you don't have GD2 installed.
 	'EmblemCacheInterval'		=> 12,						// Hourly interval to re-cache guild emblems (set to 0 to disable emblem cache).
-	'EmblemUseWebservice'		=> true,					// Load emblems from WebService?
+	'EmblemUseWebservice'		=> false,					// Load emblems from WebService?
 	'SessionCookieExpire'		=> 48,						// Duration in hours.
 	'AdminMenuGroupLevel'		=> AccountLevel::LOWGM,		// The starting group ID for which module actions are moved into the admin menu for display.
 	'DateDefaultTimezone'		=> 'UTC',					// The default timezone, consult the PHP manual for valid timezones: http://php.net/timezones (null for defaut system TZ)
