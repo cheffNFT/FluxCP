@@ -116,14 +116,14 @@ try {
 		FLUX_DATA_DIR.'/itemshop'	=> 'item shop image',
 		FLUX_DATA_DIR.'/tmp'		=> 'temporary'
 	);
-	
+	/*
 	foreach ($directories as $directory => $directoryFunction) {
 		$directory = realpath($directory);
 		if (!is_writable($directory))
 			throw new Flux_PermissionError("The $directoryFunction directory '$directory' is not writable.  Remedy with `chmod 0600 $directory`");
 		if (Flux::config('RequireOwnership') && function_exists('posix_getuid') && fileowner($directory) != $uid)
 			throw new Flux_PermissionError("The $directoryFunction directory '$directory' is not owned by the executing user.  Remedy with `chown -R ".posix_geteuid().":".posix_geteuid()." $directory`");
-	}
+	}*/
 	
 	if (ini_get('session.use_trans_sid'))
 		throw new Flux_Error("The 'session.use_trans_sid' php.ini configuration must be turned off for Flux to work.");
