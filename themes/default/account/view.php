@@ -61,14 +61,7 @@
 	</tr>
 	<tr>
 		<th><?php echo htmlspecialchars(Flux::message('LoginCountLabel')) ?></th>
-		<td><?php echo number_format((int)$account->logincount) ?></td>
-		<th><?php echo htmlspecialchars(Flux::message('CreditBalanceLabel')) ?></th>
-		<td>
-			<?php echo number_format((int)$account->balance) ?>
-			<?php if ($auth->allowedToDonate && $isMine): ?>
-				<a href="<?php echo $this->url('donate') ?>"><?php echo htmlspecialchars(Flux::message('AccountViewDonateLink')) ?></a>
-			<?php endif ?>
-		</td>
+		<td colspan="3"><?php echo number_format((int)$account->logincount) ?></td>
 	</tr>
 	<tr>
 		<th><?php echo htmlspecialchars(Flux::message('AccountBirthdateLabel')) ?></th>
