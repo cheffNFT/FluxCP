@@ -234,13 +234,13 @@ return array(
 	// their login status.
 	'MenuItems'		=> array(
 		'MainMenuLabel'		=> array(
-			'HomeLabel'			=> array('module' => 'main'),
+			//'HomeLabel'			=> array('module' => 'main'),
 			//'ForumLabel'		=> array('exturl' => 'http://www.fluxro.com/community'),	// External forum link
 			//'ForumLabel'		=> array('module' => 'forums'), 						// Built-in forum link
-			'NewsLabel'			=> array('module' => 'news'),
+			//'NewsLabel'			=> array('module' => 'news'),
 			// Sample items for pages function.
-			'DownloadsLabel'		=> array('module' => 'pages','action'=>'content&path=downloads'),
-			'RulesLabel'			=> array('module' => 'pages','action'=>'content&path=rules'),
+			//'DownloadsLabel'		=> array('module' => 'pages','action'=>'content&path=downloads'),
+			//'RulesLabel'			=> array('module' => 'pages','action'=>'content&path=rules'),
 			// End sample items for pages function.
 		),
 		'AccountLabel'		=> array(
@@ -251,28 +251,28 @@ return array(
 			'ServiceDeskLabel'	=> array('module' => 'servicedesk'),
 			'LogoutTitle'		=> array('module' => 'account', 'action' => 'logout'),
 		),
-		'DonationsLabel'		=> array(
-			'PurchaseLabel'		=> array('module' => 'purchase'),
-			'DonateLabel'		=> array('module' => 'donate'),
-		),
+		//'DonationsLabel'		=> array(
+		//	'PurchaseLabel'		=> array('module' => 'purchase'),
+		//	'DonateLabel'		=> array('module' => 'donate'),
+		//),
 		'InformationLabel'	=> array(
 			'ServerInfoLabel'	=> array('module' => 'server', 'action' => 'info'),
 			'ServerStatusLabel'	=> array('module' => 'server', 'action' => 'status'),
 			'WoeHoursLabel'		=> array('module' => 'woe'),
-			'CastlesLabel'		=> array('module' => 'castle'),
+			//'CastlesLabel'		=> array('module' => 'castle'),
 			'WhosOnlineLabel'	=> array('module' => 'character', 'action' => 'online'),
 			'MapStaticsLabel'=> array('module' => 'character', 'action' => 'mapstats'),
-			'RankingInfoLabel'	=> array('module' => 'ranking', 'action' => 'character'),
-			'VendingInfoLabel'	=> array('module' => 'vending'),
-			'BuyingstoreInfoLabel'	=> array('module' => 'buyingstore'),
+			//'RankingInfoLabel'	=> array('module' => 'ranking', 'action' => 'character'),
+			//'VendingInfoLabel'	=> array('module' => 'vending'),
+			//'BuyingstoreInfoLabel'	=> array('module' => 'buyingstore'),
 		),
-		'DatabaseLabel'		=> array(
+		/*'DatabaseLabel'		=> array(
 			'ItemDatabaseLabel'	=> array('module' => 'item'),
 			'MobDatabaseLabel'	=> array('module' => 'monster'),
-		),
+		),*/
 		'SocialLabel'		=> array(
-			'JoinUsInFacebookLabel'	=> array('exturl' => 'https://www.facebook.com/<change_me>'),
-			'RateUsOnRMSLabel'		=> array('exturl' => '<link_to_RMS>'),
+			'FollowUsTwitterLabel'	=> array('exturl' => 'https://www.twitter.com/gamesarcada'),
+			'JoinOurDiscordLabel'		=> array('exturl' => 'https://discord.gg/pjgeJmBasr'),
 		),
 		'Service Desk'	=> array(
 			'ServiceDeskLabel'	=> array('module' => 'servicedesk', 'action' => 'staffindex'),

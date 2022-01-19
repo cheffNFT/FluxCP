@@ -37,39 +37,7 @@
 				<td></td>
 			</tr>
 			<?php endif ?>
-						<?php if (count(Flux::$appConfig->get('ThemeName', false)) > 1): ?>
-			<tr>
-				<td colspan="3"></td>
-				<td align="right">
-				<span>Theme:
-					<select name="preferred_theme" onchange="updatePreferredTheme(this)">
-						<?php foreach (Flux::$appConfig->get('ThemeName', false) as $themeName): ?>
-						<option value="<?php echo htmlspecialchars($themeName) ?>"<?php if ($session->theme == $themeName) echo ' selected="selected"' ?>><?php echo htmlspecialchars($themeName) ?></option>
-						<?php endforeach ?>
-					</select>
-					</span>
-					
-					<form action="<?php echo $this->urlWithQs ?>" method="post" name="preferred_theme_form" style="display: none">
-						<input type="hidden" name="preferred_theme" value="" />
-					</form>
-				</td>
-				<td></td>
-			</tr>
-			<?php endif ?>
-
-            <tr>
-                <td colspan="3"></td>
-                <td align="right">
-                            <span>Language:
-                                <select name="preferred_language" onchange="updatePreferredLanguage(this)">
-                                    <?php foreach (Flux::getAvailableLanguages() as $lang_key => $lang): ?>
-                                        <option value="<?php echo htmlspecialchars($lang_key) ?>"<?php if (!empty($_COOKIE['language']) && $_COOKIE['language'] == $lang_key) echo ' selected="selected"' ?>><?php echo htmlspecialchars($lang) ?></option>
-                                    <?php endforeach ?>
-                                    </select>
-                                </span>
-                </td>
-                <td></td>
-            </tr>
+		
 		</table>
 	</body>
 </html>

@@ -55,8 +55,7 @@ return array(
 	'ItemCard1Label'          => 'Card 1',
 	'ItemCard2Label'          => 'Card 2',
 	'ItemCard3Label'          => 'Card 3',
- 	'ItemRandOptionsLabel'    => 'Random options',
-            
+             
     //SIDEBAR
     //FluxCP Menu Items
     //Categories
@@ -100,8 +99,8 @@ return array(
     'BuyingstoreInfoLabel'        => 'Buyingstore Info',
     'ItemDatabaseLabel'            => 'Item Database',
     'MobDatabaseLabel'            => 'Mob Database',
-    'JoinUsInFacebookLabel'            => 'Join us on Facebook!',
-    'RateUsOnRMSLabel'            => 'Rate us on RMS!',
+    'FollowUsTwitterLabel'            => 'Follow us on Twitter!',
+    'JoinOurDiscordLabel'            => 'Join Discord!',
 	
 	// Module: account
 	// - account/changemail
